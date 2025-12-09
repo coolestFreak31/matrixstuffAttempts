@@ -5,7 +5,7 @@ int* summtrx(int mat1[][3], int mat2[][3], int rows) {
     int* mat = malloc(rows * 3 * sizeof(int)); // Динамически выделяем память для результата
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < 3; j++) {
-            mat[i * 3 + j] = mat1[i][j] + mat2[i][j]; // Правильный доступ к элементам
+            mat[i * 3 + j] = mat1[i][j] + mat2[i][j];
         }
     }
     return mat; // Возвращаем указатель на массив результата
